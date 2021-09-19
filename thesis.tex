@@ -47,29 +47,40 @@
 \pagestyle{scrheadings}
 
 \begin{spacing}{1}
-\chapter{Einleitung}\label{chapter:introduction}
+	\chapter{Einleitung}\label{chapter:einleitung}
 \end{spacing}
-\input{./sections/introduction}
+\input{./sections/einleitung}
+%------------------------------------------------------------
 
 \begin{spacing}{1}
-\chapter{Umfeldanalyse}
+	\chapter{Problemstellung}\label{chapter:problemstellung}
+\end{spacing}
+\input{./sections/problemstellung}
+%------------------------------------------------------------
+
+\begin{spacing}{1}
+	\chapter{Umfeldanalyse}
 \end{spacing}
 \input{./sections/related_work}
+%------------------------------------------------------------
 
 \begin{spacing}{1}
-\chapter{Technologien}\label{chapter:tech}
+	\chapter{Technologische Hintergrund}\label{chapter:tech}
 \end{spacing}
-\input{./sections/technologies}
+\input{./sections/tech}
+%------------------------------------------------------------
 
 \begin{spacing}{1}
-\chapter{Umsetzung}\label{chapter:implementation}
+	\chapter{Technische Umsetzung}\label{chapter:implementation}
 \end{spacing}
 \input{./sections/implementation}
+%------------------------------------------------------------
 
 \begin{spacing}{1}
-\chapter{Zusammenfassung}
+	\chapter{Tools der Projektentwicklung}\label{chapter:tools}
 \end{spacing}
-\input{./sections/summary}
+\input{./sections/tools}
+%------------------------------------------------------------
 
 \newpage
 \pagenumbering{Roman}
@@ -79,9 +90,9 @@
 \glsnogroupskiptrue
 \printglossary[title=Glossar,toctitle=Glossar] %,style=long]
 \spacing{1}{
-%\bibliographystyle{IEEEtran}
-\bibliographystyle{ieeetrande}
-\bibliography{bib}
+	%\bibliographystyle{IEEEtran}
+	\bibliographystyle{ieeetrande}
+	\bibliography{bib}
 }
 \listoffigures
 \listoftables
