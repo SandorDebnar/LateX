@@ -1,5 +1,4 @@
 \input{header}
-
 \makeatletter
 \def\bstctlcite{\@ifnextchar[{\@bstctlcite}{\@bstctlcite[@auxout]}}
 \def\@bstctlcite[#1]#2{\@bsphack
@@ -14,11 +13,12 @@
 \displaywidowpenalty=10000
 \interfootnotelinepenalty=10000
 
-\title{Unser tolles Thema -- wir sind suppa}
-\author{Stefan Schwammal, Susi Schwammal}
+\title{Modulanmeldungsystem für die Zenralisation in der HTL-Leonding}
+\author{Emir Bajramovic, Sandor Debnar, Thomas Straßhofer}
 
 \makeindex
 \makeglossaries
+
 \begin{document}
 \bstctlcite{IEEEexample:BSTcontrol}
 \newcommand{\reminder}[1]
@@ -82,6 +82,28 @@
 \input{./sections/tools}
 %------------------------------------------------------------
 
+\begin{spacing}{1}
+	\chapter{Testungen}\label{chapter:tests}
+\end{spacing}
+\input{./sections/tests}
+%------------------------------------------------------------
+
+\begin{spacing}{1}
+	\chapter{Handbuch}\label{chapter:handbuch}
+\end{spacing}
+\input{./sections/handbuch}
+%------------------------------------------------------------
+
+\begin{spacing}{1}
+	\chapter{Fazit}\label{chapter:fazit}
+\end{spacing}
+\input{./sections/fazit}
+%------------------------------------------------------------
+\begin{spacing}{1}
+	\chapter{Literatur}\label{chapter:lit}
+\end{spacing}
+\input{./sections/lit}
+%------------------------------------------------------------
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{\value{RPages}}
@@ -101,4 +123,3 @@
 \addchap{Anhang}
 \input{./sections/appendix}
 \end{document}
-
