@@ -3,31 +3,28 @@ Die Software ist eine Open-Source Objekt-RDBMS. Das System gewährleistet die Da
 unabhängig von der Datengröße und ist zudem in hohem Maße erweiterbar, z. B. mit benutzerdefinierten
 Datensätzen, Funktionen, sekundäre Datenbankmodellen und sogar verschiedenen Programmiersprachen, 
 ohne dass die Datenbank neu kompiliert werden muss. PostgreSQL ist eine komplexere Datenbank als
-SQLite in Bezug auf Funktionen, unterstützte Datentypen und Zuverlässigkeit. 
+SQLite in Bezug auf Funktionen, unterstützte Datentypen und Zuverlässigkeit. \cite{PostgreSQL_About}
 
 \begin{large} \emph{\textbf{Hauptmerkmalen}} \end{large}
 \begin{itemize}
     \item \underline{\texttt{Portabilität}}:
         PostgreSQL ist nur portabel, wenn die Datenbank in eine Datei exportiert und dann
-        auf einen Server kopiert wird. 
+        auf einen Server kopiert wird. \cite{SQLite_vs_PostgreSQL}
     \item \underline{\texttt{Unterstützte Datensätze}}:
         Das Programm kann jeden Datentyp speichern, der in einer Datenbank vorkommen
-        kann. 
+        kann. \cite{SQLite_vs_PostgreSQL}
     \item \underline{\texttt{Datenbankmodell}}:
         die PostgreSQL-Datenbank benötigt mehr Speicherplatz (200 MB), da sie ein 
         Client-Server-Modell darstellt und einen Datenbankserver zur Installation und 
-        Ausführung benötigt.
+        Ausführung benötigt.\cite{SQLite_vs_PostgreSQL}
     \item \underline{\texttt{Sicherheit}}:
         PostgreSQL bietet mehrere Datensicherheitsmechanismen, z.B. GSSAPI, SSPI, LDAP, 
-        um sensible Daten zu schützen. 
+        um sensible Daten zu schützen.\cite{PostgreSQL_Authentication}
     \item \underline{\texttt{Standardisiert}}:
-         PostgreSQL unterstützt 160 der 190 grundlegenden SQL-Features. 
-    \item \underline{\texttt{Erweiterbar}}:
-        Dank der flexiblen, dynamischen Ladefunktion können wir problemlos externen 
-        Bibliotheken importieren. 
+         PostgreSQL unterstützt 160 der 190 grundlegenden SQL-Features.\cite{PostgreSQL_standardisierung}
     \item \underline{\texttt{Backup}}:
         PostgreSQL bietet drei verschiedene Backup-Strategien: SQL Dump, File System 
-        Level Backup und kontinuierliche Archivierung. 
+        Level Backup und kontinuierliche Archivierung.\cite{PostgreSQL_Backup}
 \end{itemize} 
 \begin{large} \emph{\textbf{Fazit}} \end{large}
 PostgreSQL verfügt über zusätzliche Funktionen, die für Integrität und Sicherheit sorgen,
