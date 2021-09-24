@@ -1,7 +1,9 @@
 Diese Datenbank wurde von Dwayne Richard Hipp in den frühen 2000er Jahren entwickelt und bietet ein relationales,
 leichtgewichtige Datenbankmanagementsystem ohne sekundäre Datenbankmodelle. Einer der Hauptvorteile ist die Tatsache,
-dass es sich um eine Open-Source-Datenbank für mehrere Plattformen (Windows, Mac, Linux, Unix usw.) handelt, die dank der einfachen Datenspeicherung,
-der dynamischen Datentypen und einer breiten Palette von Programmiersprachen (VS Basic, C-sharp, PHP, Python usw.) eine schnelle und einfache Lösung für die Speicherung von Daten bietet.
+dass es sich um eine Open-Source-Datenbank für mehrere Plattformen (Windows, Mac, Linux, Unix usw.) handelt,
+die dank der einfachen Datenspeicherung,
+der dynamischen Datentypen und einer breiten Palette von Programmiersprachen (VS Basic, C-sharp, PHP, Python usw.)
+eine schnelle und einfache Lösung für die Speicherung von Daten bietet.\cite{SQLite_wiki}
 
 
 \begin{large} \emph{\textbf{Hauptmerkmalen}} \end{large}
@@ -9,28 +11,28 @@ der dynamischen Datentypen und einer breiten Palette von Programmiersprachen (VS
     \item \underline{\texttt{Portabilität}}:
         SQLite speichert seine Datenbank in einer normalen Festplattendatei 
         innerhalb des Verzeichnisses,
-        was es zu einem der portabelsten RDBMS macht. 
+        was es zu einem der portabelsten RDBMS macht. \cite{Was_ist_SQLite}
     \item \underline{\texttt{Unterstützte Datensätze}}:
         die grundlegenden Datentypen sind 64-Bit-Integer, 64-Bit-IEEE-Gleitkommazahl,
-        String, TEXT, BLOB, NULL. 
+        String, TEXT, BLOB, NULL. \cite{SQLite_datatypes}
     \item \underline{\texttt{Eigenständig}}:
         nicht vom Betriebssystem oder externen Bibliotheken abhängig und kann aufgrund seines geringen
         Speicherplatzbedarfs (500KB) in einer Vielzahl von Umgebungen eingesetzt werden, einschließlich 
-        mobiler Geräte (Android, iPhone) und Spielkonsolen.
+        mobiler Geräte (Android, iPhone) und Spielkonsolen.\cite{SQLite_features}
     \item \underline{\texttt{Geschwindigkeit}}:
         SQLite schneidet bei den folgenden Abfragen gut ab (insbesondere, wenn sie in einer Transaktion sind),
-        dank seiner kompakten, einfachen Architektur und Gestaltung.
+        dank seiner kompakten, einfachen Architektur und Gestaltung. Siehe Anhang \ref{geschwindigkeit_der_querys} . \cite{SQLite_speed}
     \item \underline{\texttt{Serverlos}}:
-        keine Client-Server-Architektur ist erforderlich, so dass es innerhalb der Anwendung arbeiten kann. 
+        keine Client-Server-Architektur ist erforderlich, so dass es innerhalb der Anwendung arbeiten kann. \cite{SQLite_serverless}
     \item \underline{\texttt{Zero Konfiguration}}:
         keine Installations- oder Serveranforderungen von dem Benutzer erforderlich und es ohne Datenbankkonfiguration
-        verwendet werden kann. 
+        verwendet werden kann.\cite{SQLite_features}
     \item \underline{\texttt{Transaktional}}:
         Transaktionen folgen der A-C-I-D-Struktur für Zuverlässigkeit, was bedeutet, dass die meisten Abfrageeigenschaften
-        den Grundsätzen der Atomarität, Konsistenz, Isolierung und Dauerhaftigkeit entsprechen.  
+        den Grundsätzen der Atomarität, Konsistenz, Isolierung und Dauerhaftigkeit entsprechen.\cite{SQLite_features}  
     \item \underline{\texttt{Online Backup-API}}:
         Die Online-Backup-API, der einzige Datenwiederherstellungsmechanismus, der es ermöglicht, Daten von einer Datenbank
-        in eine andere zu kopieren, sogar inkrementell, indem der Inhalt der Zieldatenbank unter Verwendung von Shared-Locks überschrieben wird.
+        in eine andere zu kopieren, sogar inkrementell, indem der Inhalt der Zieldatenbank unter Verwendung von Shared-Locks überschrieben wird.\cite{SQLite_backup}
 \end{itemize} 
 \begin{large} \emph{\textbf{Fazit}} \end{large}
     SQLite ist eine leicht einzurichtende, schnelle und benutzerfreundliche Datenbank, deren Schwäche jedoch ihre Einfachheit ist.
