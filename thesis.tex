@@ -29,8 +29,8 @@
 
 \includepdf{./titlepage/coversheet}
 \pagenumbering{Roman}
-\input{erklärung.tex}
-\input{./sections/abstract}
+\input{./chapter/erklärung.tex}
+\input{./chapter/abstract.tex}
 
 \pagestyle{plain}
 
@@ -48,50 +48,50 @@
 \begin{spacing}{1}
 	\chapter{Einleitung}\label{chapter:einleitung}
 \end{spacing}
-\input{./sections/einleitung}
+\input{./chapter/einleitung}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Problemstellung}\label{chapter:problemstellung}
 \end{spacing}
-\input{./sections/problemstellung}
+\input{./chapter/problemstellung}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Umfeldanalyse}
 \end{spacing}
-\input{./sections/related_work}
+
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Technologische Hintergrund}
 		\label{chapter:tech}
 \end{spacing}
-\input{./sections/tech}
+\input{./chapter/technologischeHintergrund}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Technische Umsetzung}\label{chapter:implementation}
 \end{spacing}
-\input{./sections/implementation}
+\input{./chapter/implementation.tex}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Tools der Projektentwicklung}\label{chapter:tools}
 \end{spacing}
-\input{./sections/tools}
+\input{./chapter/tools}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Testungen}\label{chapter:tests}
 \end{spacing}
-\input{./sections/tests}
+\input{./chapter/tests.tex}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
 	\chapter{Handbuch}\label{chapter:handbuch}
 \end{spacing}
-\input{./sections/handbuch}
+\input{./chapter/handbuch.tex}
 %------------------------------------------------------------
 
 \begin{spacing}{1}
@@ -102,7 +102,7 @@
 \begin{spacing}{1}
 	\chapter{Literatur}\label{chapter:lit}
 \end{spacing}
-\input{./sections/lit}
+\input{./sections/literatur.tex}
 %------------------------------------------------------------
 \newpage
 \pagenumbering{Roman}
@@ -121,5 +121,5 @@
 \lstlistoflistings
 \appendix
 \addchap{Anhang}
-\input{./sections/anhang.tex}
+\input{./chapter/anhang.tex}
 \end{document}
